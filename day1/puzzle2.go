@@ -1,9 +1,6 @@
 package day1
 
-import (
-	_ "embed"
-	"fmt"
-)
+import "fmt"
 
 type Window struct {
 	values []int

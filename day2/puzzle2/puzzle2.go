@@ -1,9 +1,6 @@
 package puzzle2
 
-import (
-	"advent/day2"
-	_ "embed"
-)
+import "advent/day2"
 
 type submarine struct {
 	aim                uint
@@ -23,7 +20,6 @@ func (sub *submarine) forward(units uint) {
 func (sub *submarine) up(units uint) {
 	sub.aim -= units
 }
-
 
 func Puzzle2() uint {
 	sub := submarine{}

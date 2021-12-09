@@ -1,9 +1,6 @@
 package day1
 
-import (
-	_ "embed"
-	"math"
-)
+import "math"
 
 func Puzzle1() int {
 	var increments int
