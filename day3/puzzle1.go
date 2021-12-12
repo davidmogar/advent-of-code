@@ -18,9 +18,9 @@ func Puzzle1() int64 {
 
 	for i, value := range count {
 		if value > target { // more 1s
-			gammaRate += math.Pow(2, float64(reportLength - i - 1))
+			gammaRate += math.Pow(2, float64(reportLength-i-1))
 		} else { // more 0s
-			epsilonRate += math.Pow(2, float64(reportLength - i - 1))
+			epsilonRate += math.Pow(2, float64(reportLength-i-1))
 		}
 	}
 

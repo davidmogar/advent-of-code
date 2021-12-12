@@ -89,7 +89,7 @@ func getRating(root *Node, lessSignificant bool) (int64, error) {
 
 	for currentNode.leftBranch != nil || currentNode.rightBranch != nil {
 		currentNode = currentNode.getBranchOrDefault(lessSignificant)
-		rating = append(rating, rune(48 + currentNode.value))
+		rating = append(rating, rune(48+currentNode.value))
 	}
 
 	return strconv.ParseInt(string(rating), 2, 64)

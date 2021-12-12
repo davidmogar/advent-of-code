@@ -17,7 +17,7 @@ var (
 			var report []int
 
 			for _, value := range scanner.Text() {
-				report = append(report, int(value) - 48)
+				report = append(report, int(value)-48)
 			}
 
 			reports = append(reports, report)
